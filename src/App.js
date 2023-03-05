@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Background from "./components/background/Background";
+import Button from "./components/button/Button";
+import Container from "./components/container/Container";
+import Navbar from "./components/navbar/Navbar";
+import Articles from "./pages/articles/Articles";
 
 function App() {
+  // let isBlue = color {blue};
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Container>
+        {/* <h1>Hello</h1>
+        <Background color="red" text="Hello"></Background>
+        <Background color="purple" text="Hello"></Background>
+        <Background color="blue" text="Hello" isBlue={true}></Background> */}
+        <Articles />
+      </Container>
+    </>
   );
 }
 
